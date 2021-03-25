@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css"></link>
+  <link rel="stylesheet" href="./responsive.css">
+  <title>SeaFood_Site</title>
+</head>
+<body>
+  <!-- 見出し　ハンバーガー -->
+<header>
+  <div class="logo-wrapper"><div class="logo">IWATE SEAFOOD</div></div>
+  <div class="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+<div class="nav-wrapper">
+  <ul>
+    <li>
+      <a href="#seafood-contents">サケ</a>
+    </li>
+    <li>
+      <a href="#seafood-content">ウニ</a>
+    </li>
+    <li>
+      <a href="#faq-wrapper">質問</a>
+    </li>
+    <li>
+      <a href="#form-wrapper">お問い合わせ</a>
+    </li>
+  </ul>
+</div>
+<!-- 見出し終り-->
+
+<!-- video -->
+<video autoplay muted loop src="./movie/seamovie.mp4" type="video.mp4"></video>
+
+<!--商品紹介-->
+<h1>商品紹介</h1><!--divで囲ってsectionの中に入れれば重ねられた？-->
+<main>
+<!--スライドショー-->
+<section id="seafood-contents">
+<!--サケ-->
+<div class="seafood-content animate">
+<div class="salmon-title">サケ</div>
+<div class="salmon-text">地元の自慢のサケは脂の乗りもよく、焼き魚、刺身、等様々な料理に適しております。お腹のイクラも絶品です！</div>
+  <ul id="salmon-slide">
+<li><img src="./salmon/salmon1.jpeg" alt="サーモン"></li>
+<li><img src="./salmon/salmon2.jpg" alt="サーモンの刺身"></li>
+<li><img src="./salmon/salmon3.jpg" alt="サーモンの切り身"></li>
+<li><img src="./salmon/salmon4.jpg" alt="サーモンの寿司"></li>
+<li><img src="./salmon/salmon5.jpg" alt="サーモンのソテー"></li>
+    </ul>
+ <div class="clear"></div>
+    <div id="nav_btn">
+      <li><img class="prev" src="./btn/btnleft.JPG" alt="右ボタン"></li>
+      <li><img class="next" src="./btn/btnright.JPG" alt="左ボタン"></li>
+    </div>
+  </div>
+<!--ウニ-->
+  <div class="seafood-content animate">
+<div class="seaurchin-title">ウニ</div>
+<div class="seaurchin-text">良質な昆布を食べ、適切な環境下で育ったウニの味は濃厚で、1度食べたらもう止まりません。ぜひご正味あれ！</div>
+<ul id="seaurchin-slide">
+<li><img src="./sea urchin/uni1.jpg" alt="ウニ"></li>
+<li><img src="./sea urchin/uni2.jpg" alt="ウニ中身"></li>
+<li><img src="./sea urchin/uni3 11.51.26.jpg" alt="ウニ丼"></li>
+<li><img src="./sea urchin/uni4.jpg" alt="ウニスープ"></li>
+</ul>
+<div id="nav_btn1">
+  <li><img class="prev" src="./btn/btnleft.JPG" alt=""></li>
+  <li><img class="next" src="./btn/btnright.JPG" alt=""></li>
+</div>
+</div>
+<nav class="btn"><a href="#form-wrapper"><button id="form-btn">お問い合わせはこちら!</button></a></nav>
+</div>
+</section>
+<!--商品紹介終り-->
+<!--質問-->
+<section id="faq-wrapper">
+<div class="faq-heading"><h2>FAQ</h2></div>
+<div class="faq">
+<ul class="faqlist">
+  <li class="faq-list-item">
+    <h3 class="question">岩手県はどんなところですか？</h3>
+    <span>?</span>
+    <div class="answer">
+      <p>岩手県は自然豊かな地域で、アウトドア向けの方におすすめです。海、山ともに溢れる魅力をぜひお楽しみください。</p>
+      <li class="faq-list-item">
+        <h3 class="question">岩手県民の人柄は良いですか？</h3>
+        <span>?</span>
+        <div class="answer">
+          <p>とても優しく接してくれる人たちが多く初対面であっても困っていたら助けてくれます。人情に熱い性格の人が多いです。</p>
+    </div>
+</ul>
+</div>
+</section>
+<!--お問い合わせ-->
+<div id="form-wrapper">
+  <p>お問い合わせはこちらから</p>
+  <form action="#" method="POST" id="form">
+    <label for="p">お名前:</label>
+    <input type="text" name="yourname" id="p" /> <br /><label for="num">
+      予約番号:</label
+    ><input type="number" name="yoyaku-num" id="num" /> <br /><label
+      for="mail"
+      >メール:</label
+    ><input type="email" name="mail" id="mail" /> <br /><label for="comment"
+      >コメント:</label
+    >
+    <textarea
+      name="comment"
+      id="comment"
+      placeholder="ここには自由にコメントを記入してください"
+    ></textarea>
+    <br /><select name="seafood" id="">
+      <option value="salmon">サケ</option>
+      <option value="sea-urchin">ウニ</option>
+    </select>
+    <br />
+    <p>岩手の海産物</p>
+    <br /><input type="checkbox" name="seafood" value="サケ" /><label
+      for="salmon"
+      id="salmon"
+      >サケ</label
+    >
+    <input type="checkbox" name="seafood" value="ウニ" /><label
+      for="sea-urchin"
+      id="sea-urchin"
+      >ウニ</label
+    >
+<br> <input type="reset" value="リセットする">
+<input type="reservation" value="予約する" >
+  </form>
+</div>
+<footer>
+  <div class="copylight"> Copyright © 2021 SeaFood_Site All Rights Reserved.</div>
+</footer>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+<script src="./index.js" defer></script>
+</body>
+</html>
