@@ -1,0 +1,107 @@
+@media (max-width: 860px) {
+  body {
+    height: 108%;
+  }
+  video {
+    width: 99%;
+  }
+  .nav-wrapper {
+    width: 25%;
+  }
+  h1 {
+    font-size: 5rem;
+    top: 42%;
+  }
+  #seafood-contents {
+    display: flex;
+    flex-direction: column;
+    height: 101.4%;
+  }
+  .seafood-content {
+    position: relative;
+    right: 7%;
+    height: 108%;
+  }
+  .salmon-title {
+    width: 100%;
+  }
+  .salmon-text {
+    font-size: 1.8rem;
+    top: 65%;
+    width: 90%;
+    left: 15%;
+  }
+  #salmon-slide {
+    height: 360px;
+    display: flex;
+  }
+  #salmon-slide img {
+    box-shadow: none;
+  }
+  #nav_btn .prev {
+    top: 38%;
+    left: 16%;
+  }
+  #nav_btn .next {
+    top: 38%;
+    right: 28%;
+  }
+  .seaurchin-title {
+    left: 20%;
+  }
+  .seaurchin-text {
+    font-size: 1.5rem;
+    top: 65%;
+    left: 25%;
+    width: 65%;
+  }
+  #seaurchin-slide {
+    position: absolute;
+    left: 15%;
+  }
+  #seaurchin-slide img {
+    box-shadow: none;
+  }
+  #nav_btn1 {
+    top: 47%;
+    right: 70%;
+  }
+  #nav_btn1 .prev {
+    left: 86%;
+  }
+  #nav_btn1 .next {
+    left: 139%;
+  }
+  #faq-wrapper {
+    bottom: -28%;
+  }
+  .faq-list-item {
+    height: 100%;
+  }
+  .question {
+    font-size: 45%;
+  }
+  .faq-list-item p {
+    font-size: 5%;
+    width: 90%;
+  }
+  .faq-list-item span {
+    bottom: 60%;
+    left: 95%;
+  }
+  .btn {
+    display: none;
+  }
+  #form-wrapper {
+    bottom: -52%;
+    padding-bottom: -30%;
+    letter-spacing: normal;
+  }
+  footer {
+    top: 155%;
+    background-color: rgb(224, 204, 204);
+    color: #fff;
+  }
+}
+@media (min-width: 820px) and(max-width: 1680px) {
+}
