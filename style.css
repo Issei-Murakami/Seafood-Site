@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  margin: 0;
+  height: 2000px;
+  width: 100%;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+p {
+  font-family: serif;
+}
+header {
+  background-color: white;
+  width: 100%;
+  height: 60px;
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 99;
+}
+.logo-wrapper {
+  background-color: seashell;
+}
+.logo {
+  margin: 0 60px;
+  height: 100%;
+  line-height: 60px;
+  font-size: 24px;
+  color: aqua;
+}
+
+.nav-toggle {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer !important;
+}
+
+span {
+  display: block;
+  height: 5px;
+  width: 40px;
+  margin: 5px 10px;
+  border-radius: 2px;
+  background-color: black;
+}
+
+.nav-wrapper {
+  position: fixed;
+  top: 60px;
+  right: -100%;
+  height: 100%;
+  width: 15%;
+  background-color: #808080;
+  transition: 300ms;
+  z-index: 999;
+  opacity: 0.95;
+  transition: 0.25s;
+}
+
+.nav-wrapper.open {
+  right: 0;
+}
+.nav-wrapper.close {
+  right: -200px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-wrapper li {
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  margin: 7%;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+video {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 100%;
+  height: 520px;
+  z-index: -10;
+  object-fit: cover;
+}
+main {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  max-width: 2800px;
+  height: 1250px;
+  top: 55%;
+}
+h1 {
+  font-family: serif;
+  font-size: 5rem;
+  border-bottom: 2px solid rgb(9, 24, 114);
+  display: inline-block;
+  position: absolute;
+  top: 55%;
+  left: 40%;
+}
+#seafood-contents {
+  background-image: url(./image-sea/water-1330252_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1150px;
+  position: absolute;
+  width: 100%;
+  top: 11%;
+  max-width: 3000px;
+}
+.seafood-content {
+  width: 100%;
+  height: 34.8%;
+  position: relative;
+  top: 1%;
+  overflow: hidden;
+}
+.salmon-title {
+  width: 58%;
+  top: -50px;
+  font-family: serif;
+  font-size: 2rem;
+  color: #dc143c;
+}
+.salmon-text {
+  position: absolute;
+  left: 50%;
+  font-family: monospace;
+  font-size: 3.5rem;
+  color: rgb(200, 103, 92);
+}
+#salmon-slide {
+  width: 10000px;
+  list-style: none;
+  position: absolute;
+  left: 16%;
+}
+#salmon-slide img {
+  box-shadow: 0px 5px 10px 10px #ffffff;
+}
+#salmon-slide li {
+  float: left;
+  margin-right: 20%;
+}
+#nav_btn {
+  list-style: none;
+  height: 5px;
+}
+#nav_btn .prev {
+  position: absolute;
+  left: 11%;
+  top: 35%;
+  cursor: pointer;
+}
+#nav_btn .next {
+  position: absolute;
+  top: 35%;
+  right: 51%;
+  cursor: pointer !important;
+}
+.seaurchin-title {
+  width: 70%;
+  position: absolute;
+  top: -10px;
+  left: 40%;
+  font-size: 2rem;
+  font-family: serif;
+  color: rgb(182, 104, 3);
+}
+.seaurchin-text {
+  position: absolute;
+  top: 10%;
+  font-size: 3rem;
+  color: rgb(255, 216, 109);
+  width: 50%;
+}
+#seaurchin-slide {
+  width: 10000px;
+  list-style: none;
+  position: absolute;
+  left: 60%;
+  top: 8%;
+}
+#seaurchin-slide img {
+  box-shadow: 0px 5px 10px 10px #ffffff;
+}
+#seaurchin-slide li {
+  float: left;
+  margin-right: 15%;
+}
+#nav_btn1 {
+  list-style: none;
+  position: relative;
+  top: 35%;
+}
+#nav_btn1 .prev {
+  position: absolute;
+  left: 55%;
+  cursor: pointer;
+}
+#nav_btn1 .next {
+  position: absolute;
+  right: 3.5%;
+  cursor: pointer !important;
+}
+.btn {
+  width: 8.5%;
+  position: absolute;
+  bottom: 5%;
+  left: 46%;
+}
+#faq-wrapper {
+  height: 20%;
+  width: 100%;
+  background-color: rgb(212, 206, 206);
+  position: absolute;
+  bottom: -22%;
+}
+.faqlist {
+  list-style: none;
+}
+.faq-list-item {
+  position: relative;
+  left: 25%;
+  border-bottom: 1px solid #000;
+  width: 50%;
+  cursor: pointer;
+}
+.faq-list-item p {
+  font-size: 90%;
+}
+.faq-list-item span {
+  position: absolute;
+  right: -10%;
+  background: none;
+  top: 10%;
+}
+#form-wrapper {
+  position: absolute;
+  bottom: -45%;
+  text-align: center;
+  background-color: #cfc7c74f;
+  padding: 25px;
+  width: 100%;
+}
+footer {
+  position: relative;
+  top: 150%;
+  background-color: rgb(223, 206, 206);
+  color: #ffffff;
+}
