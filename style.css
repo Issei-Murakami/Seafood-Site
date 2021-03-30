@@ -180,8 +180,8 @@ h1 {
 }
 #nav_btn .next {
   position: absolute;
-  top: 35%;
-  right: 51%;
+  margin-right:70px;
+  margin-top:85px;
   cursor: pointer !important;
 }
 .seaurchin-title {
