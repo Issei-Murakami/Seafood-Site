@@ -44,7 +44,8 @@
   }
   #nav_btn .next {
    position:absolute;
-    margin-left:108px;
+    margin-left:120px;
+    margin-top:195px
     
      }
   .seaurchin-title {
@@ -71,7 +72,7 @@
     left: 86%;
   }
   #nav_btn1 .next {
-    left: 139%;
+    left: 152%;
   }
   #faq-wrapper {
     bottom: -28%;
