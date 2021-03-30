@@ -179,8 +179,9 @@ h1 {
   cursor: pointer;
 }
 #nav_btn .next {
-  margin-right:70px;
-  margin-top:85px;
+position:absolute;
+  left:46%;
+  top:11%;
   cursor: pointer !important;
 }
 .seaurchin-title {
