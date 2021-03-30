@@ -1,4 +1,4 @@
-@media (max-width: 860px) {
+@media (max-width: 670px) {
   body {
     height: 108%;
   }
@@ -43,9 +43,10 @@
     left: 16%;
   }
   #nav_btn .next {
-    top: 38%;
-    right: 28%;
-  }
+   position:absolute;
+    margin-left:108px;
+    
+     }
   .seaurchin-title {
     left: 20%;
   }
