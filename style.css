@@ -179,7 +179,6 @@ h1 {
   cursor: pointer;
 }
 #nav_btn .next {
-  position: absolute;
   margin-right:70px;
   margin-top:85px;
   cursor: pointer !important;
